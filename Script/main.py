@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 ROOT_DIR = pathlib.Path(__file__).resolve().parents[1]
 HEIS_DIR = ROOT_DIR / "Source" / "HEIs"
 NUTS_DIR = ROOT_DIR / "Source" / "NUTS"
-DEFAULT_OUTPUT_NAME = "Norwegian-HEIs.csv"
+DEFAULT_OUTPUT_NAME = "no-heis-2026.csv"
 
 LEGAL_STATUS_MAP = {
     "1": "Public",
@@ -33,7 +33,7 @@ COLUMN_ORDER = [
     "Category",
     "Institution_Category_Standardized",
     "Member_of_European_University_alliance",
-    "Main Url",
+    "url",
     "NUTS2",
     "NUTS2_Label",
     "NUTS3",
@@ -130,25 +130,20 @@ def _list_excel_files(directory):
     )
 
 
-def _list_all_files(directory):
-    return sorted([path for path in directory.iterdir() if path.is_file()])
-
-
-def _print_tree(directory, all_files, excel_files):
-    print(f"{directory.name}/")
-    if not all_files:
-        print("  (empty directory)")
+def _print_tree(directory, files):
+    relative = directory.relative_to(ROOT_DIR)
+    print(f"{relative}/")
+    if not files:
+        print("  (no Excel files found)")
         return
-    excel_names = {path.name for path in excel_files}
-    for file_path in all_files:
-        marker = " (excel)" if file_path.name in excel_names else ""
-        print(f"  - {file_path.name}{marker}")
+    for file_path in files:
+        print(f"  - {file_path.name}")
 
 
 def _choose_excel_file(directory, label):
     files = _list_excel_files(directory)
-    all_files = _list_all_files(directory)
-    _print_tree(directory, all_files, files)
+    print(f"\nAvailable files in {label}:")
+    _print_tree(directory, files)
     if not files:
         raise FileNotFoundError(f"No Excel files found in {directory}")
     print(f"\nSelect the {label} Excel file:")
@@ -205,7 +200,7 @@ def normalize_hei_rows(hei_rows, nuts_label_map):
                 "Member_of_European_University_alliance": EU_ALLIANCE_MAP.get(
                     alliance, alliance
                 ),
-                "Main Url": row.get("Institutional website", "").strip(),
+                "url": row.get("Institutional website", "").strip(),
                 "NUTS2": nuts2_code,
                 "NUTS2_Label": nuts_label_map.get(nuts2_code, ""),
                 "NUTS3": nuts3_code,

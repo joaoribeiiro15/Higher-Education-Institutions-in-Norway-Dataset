@@ -1,4 +1,4 @@
-ID,Name,Category,Institution_Category_Standardized,Member_of_European_University_alliance,Main Url,NUTS2,NUTS2_Label,NUTS3,NUTS3_Label
+ID,Name,Category,Institution_Category_Standardized,Member_of_European_University_alliance,url,NUTS2,NUTS2_Label,NUTS3,NUTS3_Label
 NO-HEI-001,University of Agder (UiA),Public,University,Member of a European Universities Initiative alliance,www.uia.no,NO09,Agder og Sør-Østlandet,NO092,Agder
 NO-HEI-002,University of Bergen (UiB),Public,University,Member of a European Universities Initiative alliance,www.uib.no,NO0A,Vestlandet,NO0A2,Vestland
 NO-HEI-003,University of Inland Norway (INN University),Public,University,Not found in European Commission sources,www.inn.no,NO02,Innlandet,NO020,Innlandet
@@ -12,7 +12,7 @@ NO-HEI-007-02,The Arctic University of Norway (UiT) (Region: Nordland),Public,Un
 NO-HEI-007-03,The Arctic University of Norway (UiT) (Region: Finnmark),Public,University,Not found in European Commission sources,en.uit.no,NO07,Nord-Norge,NO073,Finnmark/Finnmárku/Finmarkku
 NO-HEI-008-01,Norwegian University of Science and Technology (NTNU) (Region: Trondheim),Public,University,Member of a European Universities Initiative alliance,www.ntnu.edu,NO06,Trøndelag,NO060,Trøndelag/Trööndelage
 NO-HEI-008-02,Norwegian University of Science and Technology (NTNU) (Region: Gjøvik),Public,University,Member of a European Universities Initiative alliance,www.ntnu.edu,NO02,Innlandet,NO020,Innlandet
-NO-HEI-008-03,Norwegian University of Science and Technology (NTNU) (Region: Ålesund),Public,University,Member of a European Universities Initiative alliance,www.ntnu.edu,NO0A,Vestlandet,NO0A3,Møre og Romsdal
+NO-HEI-008-03,Norwegian University of Science and Technology (NTNU) (Region: Ålesund),Public,University,Member of a European Universities Initiative alliance,www.ntnu.edu,NO05,,NO053,
 NO-HEI-009,Norwegian University of Life Sciences (NMBU),Public,University,Not found in European Commission sources,www.nmbu.no,NO08,Oslo og Viken,NO084,Akershus
 NO-HEI-010,Oslo Metropolitan University (OsloMet),Public,University,Not found in European Commission sources,www.oslomet.no,NO08,Oslo og Viken,NO081,Oslo
 NO-HEI-011,Nord University,Public,University,Member of a European Universities Initiative alliance,www.nord.no,NO07,Nord-Norge,NO071,Nordland/Nordlánnda

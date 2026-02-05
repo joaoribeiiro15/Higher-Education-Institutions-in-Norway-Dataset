@@ -18,7 +18,7 @@ In the context of the master’s thesis, *An Assessment of Web-Related Security 
   Interactive script that loads both sources, performs normalisation and joins, and exports the final dataset.
 
 - `dataset.csv`  
-  Output CSV, created when the script runs. The default output name in the script prompt is `Norwegian-HEIs.csv`.
+  Output CSV, created when the script runs. The default output name in the script prompt is `no-heis-2026.csv`.
 
 ## How to generate the dataset
 
@@ -39,7 +39,7 @@ The generated CSV contains the following columns:
 - `Category`
 - `Institution_Category_Standardized`
 - `Member_of_European_University_alliance`
-- `Main Url`
+- `url`
 - `NUTS2`
 - `NUTS2_Label`
 - `NUTS3`
@@ -55,7 +55,7 @@ The generated CSV contains the following columns:
 - **`Name`**  
   Official name of the institution.
 
-- **`Main Url`**  
+- **`url`**  
   Main institutional website, used as the primary measurement target in the thesis scanning pipeline.
 
 #### Normalised institutional attributes
