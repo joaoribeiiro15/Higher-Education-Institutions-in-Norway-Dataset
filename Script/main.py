@@ -182,6 +182,10 @@ def build_nuts_label_map(nuts_rows):
 
 
 def normalize_hei_rows(hei_rows, nuts_label_map):
+    # The HEIs source contains one row per institution (unique URL).
+    # Multi-campus institutions that share a website are represented by their
+    # main campus entry only. IDs use the base format NO-HEI-XXX and institution
+    # names do not carry campus qualifiers.
     normalized = []
     for row in hei_rows:
         legal_status = row.get("Legal status", "").strip()
@@ -248,7 +252,7 @@ def main():
     output_rows = normalize_hei_rows(hei_rows, nuts_label_map)
     output_path = _choose_output_path()
     write_csv(output_rows, output_path)
-    print(f"Wrote {len(output_rows)} rows to {output_path}")
+    print(f"Wrote {len(output_rows)} institutions to {output_path}")
 
 
 if __name__ == "__main__":

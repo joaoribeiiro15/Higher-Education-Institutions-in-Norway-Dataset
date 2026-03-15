@@ -4,7 +4,7 @@
 
 This repository produces a consolidated dataset of Norwegian higher education institutions (HEIs), which can serve as a target list for a web security measurement campaign. It combines two Excel files stored in the `Source/` folder into a single CSV file and applies a few normalization steps so that institutional attributes can be analyzed consistently.
 
-In the context of the master’s thesis, *An Assessment of Web-Related Security in Norwegian Higher Education Institutions*, this dataset supports the definition of target institutions and services, and enables regional analysis using NUTS codes, as required by the research questions on maturity variation and regional asymmetries.
+In the context of the master’s thesis, _An Assessment of Web-Related Security in Norwegian Higher Education Institutions_, this dataset supports the definition of target institutions and services, and enables regional analysis using NUTS codes, as required by the research questions on maturity variation and regional asymmetries.
 
 ## Repository structure
 
@@ -131,20 +131,14 @@ The dataset produced here is the inventory that connects institutions to their m
 
 ### HEIs
 
-- <a href="https://data.ssb.no/api/klass/v1/api-guide.html">KLASS API guide (read-only)</a>
-- <a href="https://www.regjeringen.no/en/dep/kd/organisation/kunnskapsdepartementets-etater-og-virksomheter/Subordinate-agencies-2/state-run-universities-and-university-colleges/id434505/">Norwegian Ministry of Education and Research, “Universities and University Colleges”</a>
+- <a href="https://www.regjeringen.no/en/dep/kd/organisation/kunnskapsdepartementets-etater-og-virksomheter/Subordinate-agencies-2/state-run-universities-and-university-co/id434505/">Norwegian Ministry of Education and Research, “Universities and University Colleges”</a>
 - <a href="https://eurydice.eacea.ec.europa.eu/eurypedia/norway/types-higher-education-institutions">Eurydice, “Types of higher education institutions” (Norway)</a>
 - <a href="https://www.nokut.no/en/higher-education/higher-education-institutions/">NOKUT, “Higher education institutions”</a>
 
 ### European Universities Initiative (European Commission)
 
 - <a href="https://education.ec.europa.eu/education-levels/higher-education/european-universities-initiative/map">European Universities Initiative map</a>
-- <a href="https://education.ec.europa.eu/sites/default/files/document-library-docs/european-universities-factsheet-circle_u.pdf">Factsheet, Circle U.</a>
-- <a href="https://education.ec.europa.eu/sites/default/files/document-library-docs/european-universities-factsheet-arqus.pdf">Factsheet, Arqus</a>
-- <a href="https://education.ec.europa.eu/sites/default/files/document-library-docs/european-universities-factsheet-engage.eu_.pdf">Factsheet, ENGAGE.EU</a>
-- <a href="https://education.ec.europa.eu/sites/default/files/document-library-docs/european-universities-factsheet-enhance.pdf">Factsheet, ENHANCE</a>
-- <a href="https://education.ec.europa.eu/sites/default/files/document-library-docs/annex-results-2022-erasmus-european-universities-call-june22.pdf">Erasmus European Universities call results annex (June 2022)</a>
 
 ### NUTS
 
-- <a href="https://www.ssb.no/en/klass/klassifikasjoner/508/koder">Statistics Norway KLASS, NUTS code list for Norway</a>
+- <a href="https://www.ssb.no/en/klass/klassifikasjoner/508">Statistics Norway KLASS, NUTS code list for Norway</a>
